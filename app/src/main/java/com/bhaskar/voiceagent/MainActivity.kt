@@ -142,7 +142,7 @@ class MainActivity : AppCompatActivity() {
                     .put("contents", history)
                     .put("generationConfig", JSONObject().put("responseMimeType", "application/json"))
 
-                val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent")
+                val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent")
                 val conn = url.openConnection() as HttpURLConnection
                 conn.requestMethod = "POST"
                 conn.setRequestProperty("Content-Type", "application/json")
