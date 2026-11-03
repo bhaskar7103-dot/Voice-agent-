@@ -466,4 +466,6 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         recognizer.destroy()
-        tts.s
+                tts.shutdown()
+    }
+}
